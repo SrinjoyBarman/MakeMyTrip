@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MakeMyTripInit]">
+  <test thread-count="5" name="Init TestMozilla(failed)">
+    <parameter name="browsername" value="mozilla"/>
+    <parameter name="portId" value="http://192.168.1.4:6970/wd/hub"/>
+    <groups>
+      <run>
+        <include name="Init"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.makemytrip.tests.MakeMyTripBug">
+        <methods>
+          <include name="setUp"/>
+          <include name="homePageDetails"/>
+          <include name="quit"/>
+          <include name="getResult"/>
+          <include name="createReport"/>
+        </methods>
+      </class> <!-- com.makemytrip.tests.MakeMyTripBug -->
+    </classes>
+  </test> <!-- Init TestMozilla(failed) -->
+</suite> <!-- Failed suite [MakeMyTripInit] -->
